@@ -10,7 +10,7 @@
         android:id="@+id/start_download"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="开始下载它"/>
+        android:text="开始下载"/>
     <Button
         android:id="@+id/pause_download"
         android:layout_width="match_parent"
@@ -25,5 +25,5 @@
         android:id="@+id/Appear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="我来陪你~"/>
+        android:text="Appear"/>
 </LinearLayout>

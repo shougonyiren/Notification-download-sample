@@ -110,7 +110,7 @@ public class DownloadService extends Service {
             }
         }
         public void Appear() {
-            getNotificationManager().notify(1,getNotification("啦啦啦",1));
+            getNotificationManager().notify(1,getNotification("Appear",1));
         }
     }
     private NotificationManager getNotificationManager(){
@@ -136,7 +136,7 @@ public class DownloadService extends Service {
         NotificationCompat.Builder builder=new NotificationCompat.Builder(this);
         builder.setLargeIcon(BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher));
         builder.setContentTitle(title);
-        builder.setSmallIcon(R.drawable.img);
+        builder.setSmallIcon(R.drawable.ic_launcher_background;
         builder.setChannelId(CHANNEL_ONE_ID);
         if(progress>=0){
             builder.setContentText(progress+"%");
