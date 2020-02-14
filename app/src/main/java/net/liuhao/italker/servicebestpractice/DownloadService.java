@@ -120,7 +120,7 @@ public class DownloadService extends Service {
         String CHANNEL_ONE_ID = "CHANNEL_ONE_ID";
         String CHANNEL_ONE_NAME= "CHANNEL_ONE_ID";
         NotificationChannel notificationChannel= null;
-//进行8.0的判断
+        //进行8.0的判断
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             notificationChannel= new NotificationChannel(CHANNEL_ONE_ID,
                     CHANNEL_ONE_NAME, NotificationManager.IMPORTANCE_HIGH);
@@ -136,7 +136,7 @@ public class DownloadService extends Service {
         NotificationCompat.Builder builder=new NotificationCompat.Builder(this);
         builder.setLargeIcon(BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher));
         builder.setContentTitle(title);
-        builder.setSmallIcon(R.drawable.ic_launcher_background;
+        builder.setSmallIcon(R.drawable.ic_launcher_background);
         builder.setChannelId(CHANNEL_ONE_ID);
         if(progress>=0){
             builder.setContentText(progress+"%");
